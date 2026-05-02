@@ -1,0 +1,147 @@
+/* ===== GLOBAL STYLES ===== */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #f4f6f8;
+}
+
+/* ===== CONTAINER ===== */
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background: #1976d2;
+  padding: 15px 20px;
+  color: white;
+}
+
+.navbar button {
+  background: white;
+  border: none;
+  padding: 8px 15px;
+  margin-left: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.navbar button:hover {
+  background: #e3f2fd;
+}
+
+/* ===== FILTER DROPDOWN ===== */
+.filter {
+  margin: 15px 0;
+}
+
+.filter select {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* ===== NOTIFICATION CARD ===== */
+.card {
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+/* ===== TYPE COLORS ===== */
+.card.placement {
+  border-left: 6px solid #2e7d32;
+}
+
+.card.result {
+  border-left: 6px solid #ed6c02;
+}
+
+.card.event {
+  border-left: 6px solid #0288d1;
+}
+
+/* ===== PRIORITY CARD ===== */
+.priority {
+  border: 2px solid #4caf50;
+  background: #f1fff3;
+}
+
+/* ===== TEXT ===== */
+.title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.meta {
+  font-size: 14px;
+  color: gray;
+}
+
+/* ===== BUTTONS ===== */
+.btn {
+  margin-top: 10px;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.read-btn {
+  background: #1976d2;
+  color: white;
+}
+
+.read-btn:hover {
+  background: #125ea2;
+}
+
+/* ===== PAGINATION ===== */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  margin: 0 5px;
+  padding: 8px 12px;
+  border: none;
+  background: #1976d2;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.pagination button:hover {
+  background: #125ea2;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+
+  .card {
+    padding: 10px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
