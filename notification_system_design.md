@@ -6,7 +6,7 @@
 Users receive a large number of notifications and miss important ones.
 We need to display the **top N (e.g., 10)** most important unread notifications.
 
----
+
 
 ##  Approach
 
@@ -26,22 +26,19 @@ Each notification is assigned a priority score based on:
 
 ### Final Formula:
 
-```
-Priority = Weight × Large Constant + Timestamp
-```
+
 
 This ensures:
 
 * Type importance dominates
 * Recent notifications are prioritized within same type
 
----
+
 
 ### 2. Filtering
 
 * Only **unread notifications** are considered
 
----
 
 ### 3. Sorting Approach (Basic)
 
@@ -50,11 +47,11 @@ This ensures:
 
 Time Complexity:
 
-```
-O(n log n)
-```
 
----
+O(n log n)
+
+
+
 
 ## ⚡ Optimized Approach (For Real-Time System)
 
@@ -133,19 +130,18 @@ However, it returned errors like:
 
 So, local data was used to make sure all features work properly.
 
----
+
 
 ## Running the Project
 
-```bash
+
 npm install
 npm run dev
-```
 
 Open in browser:
 http://localhost:5173
 
----
+
 
 ## Conclusion
 
