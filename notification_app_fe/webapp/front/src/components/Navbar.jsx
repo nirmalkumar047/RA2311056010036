@@ -1,6 +1,6 @@
 import { AppBar, Toolbar, Button } from "@mui/material";
 
-export default function Navbar({ setView }) {
+ function Navbar({ setView }) {
   return (
     <AppBar position="static">
       <Toolbar>
@@ -14,3 +14,4 @@ export default function Navbar({ setView }) {
     </AppBar>
   );
 }
+export default Navbar;

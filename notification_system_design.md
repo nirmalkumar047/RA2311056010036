@@ -123,17 +123,6 @@ Priority is calculated using:
 
 ---
 
-## API Usage
-
-API integration was tried using the given token.
-However, it returned errors like:
-
-* 401 Unauthorized
-* 400 Bad Request
-
-So, local data was used to make sure all features work properly.
-
----
 
 ## Running the Project
 
@@ -142,11 +131,7 @@ npm install
 npm run dev
 ```
 
-Open in browser:
-http://localhost:5173
+![img1](<Screenshot 2026-05-02 124737.png>) 
+![img2](<Screenshot 2026-05-02 124724.png>)
 
----
 
-## Conclusion
-
-The application successfully shows notifications, filters them, and highlights important ones. It is simple, clean, and easy to use.

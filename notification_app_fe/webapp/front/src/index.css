@@ -2,17 +2,15 @@
 body {
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background: #f4f6f8;
+  background: #bcf1a4;
 }
 
-/* ===== CONTAINER ===== */
 .container {
   max-width: 900px;
   margin: auto;
   padding: 20px;
 }
 
-/* ===== NAVBAR ===== */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -35,7 +33,7 @@ body {
   background: #e3f2fd;
 }
 
-/* ===== FILTER DROPDOWN ===== */
+
 .filter {
   margin: 15px 0;
 }
@@ -46,7 +44,7 @@ body {
   border: 1px solid #ccc;
 }
 
-/* ===== NOTIFICATION CARD ===== */
+
 .card {
   background: white;
   border-radius: 10px;
@@ -109,7 +107,7 @@ body {
   background: #125ea2;
 }
 
-/* ===== PAGINATION ===== */
+
 .pagination {
   display: flex;
   justify-content: center;
@@ -130,7 +128,105 @@ body {
   background: #125ea2;
 }
 
-/* ===== RESPONSIVE ===== */
+
+.main {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1976d2;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 6px;
+}
+
+.topbar button {
+  margin-left: 8px;
+  padding: 6px 10px;
+  border: none;
+  background: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+.filter-box {
+  margin: 15px 0;
+}
+
+.filter-box select {
+  padding: 6px;
+  border-radius: 4px;
+}
+
+/* ===== CARD ===== */
+.card {
+  background: white;
+  padding: 12px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  border-left: 5px solid gray;
+}
+
+/* ===== TYPE COLORS ===== */
+.card.placement {
+  border-left-color: green;
+}
+
+.card.result {
+  border-left-color: orange;
+}
+
+.card.event {
+  border-left-color: blue;
+}
+
+/* ===== PRIORITY ===== */
+.priority {
+  background-color: #e8f5e9;
+}
+
+
+.msg {
+  font-weight: bold;
+}
+
+.time {
+  font-size: 13px;
+  color: gray;
+}
+
+/* ===== PAGINATION ===== */
+.page-btns {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.page-btns button {
+  margin: 5px;
+  padding: 6px 10px;
+  border: none;
+  background: #1976d2;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+@media (max-width: 600px) {
+  .topbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+
 @media (max-width: 600px) {
   .container {
     padding: 10px;

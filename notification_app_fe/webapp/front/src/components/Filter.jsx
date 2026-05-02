@@ -1,4 +1,4 @@
-export default function Filter({ setType }) {
+ function Filter({ setType }) {
   return (
     <select onChange={(e) => setType(e.target.value)}>
       <option value="">All</option>
@@ -8,3 +8,4 @@ export default function Filter({ setType }) {
     </select>
   );
 }
+export default Filter;
